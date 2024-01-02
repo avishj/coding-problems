@@ -1,4 +1,4 @@
--- Source:
+-- Source: https://archive.is/ZqGZ1
 
 SELECT
     SUM (
