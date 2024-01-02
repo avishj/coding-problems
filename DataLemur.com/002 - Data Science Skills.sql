@@ -21,4 +21,4 @@ FROM
 WHERE
     c.skill = N'PostgreSQL'
 ORDER BY
-    candidate_id ASC;
+    1 ASC;
