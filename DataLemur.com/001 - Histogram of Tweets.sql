@@ -10,7 +10,7 @@ FROM (
     FROM
         tweets t
     WHERE
-        EXTRACT(YEAR FROM t.tweet_date) = '2022'
+        EXTRACT(YEAR FROM t.tweet_date) = N'2022'
     GROUP BY
         t.user_id
 ) AS inner_query
