@@ -5,29 +5,34 @@
 -- status instead. Neither of the given solutions give the correct answer, and there is 
 -- no way to verify the correct output.
 
+-- Edit: After reverse engineering the source code of the webpage, I have found the
+-- expected solution at: https://sqlguroo.com/api/get-specific-data/12. My first query
+-- was correct except for the possibility of the same product_id having multiple rows
+-- within the same order_id, which now has been handled.
+
 SELECT
     pd.product_name,
     SUM(
-        CASE
-            WHEN o.status = N'processed' THEN 1
+        DISTINCT CASE
+            WHEN o.status = N'processed' THEN o.order_id
             ELSE 0
         END
     ) AS processed_orders,
     SUM(
-        CASE
-            WHEN o.status = N'pending' THEN 1
+        DISTINCT CASE
+            WHEN o.status = N'pending' THEN o.order_id
             ELSE 0
         END
     ) AS pending_orders,
     SUM(
-        CASE
-            WHEN o.status = N'shipped' THEN 1
+        DISTINCT CASE
+            WHEN o.status = N'shipped' THEN o.order_id
             ELSE 0
         END
     ) AS shipped_orders,
     SUM(
-        CASE
-            WHEN o.status = N'cancelled' THEN 1
+        DISTINCT CASE
+            WHEN o.status = N'cancelled' THEN o.order_id
             ELSE 0
         END
     ) AS cancelled_orders
@@ -39,6 +44,8 @@ WHERE
     pd.product_name = N'Green Leaf Lettuce'
 GROUP BY
     pd.product_name;
+
+-- Invalid Query: Please read notice at start for details!
 
 SELECT
     pd.product_name,
