@@ -10,6 +10,9 @@
 -- was correct except for the possibility of the same product_id having multiple rows
 -- within the same order_id, which now has been handled.
 
+-- Edit: I just noticed there was a way to see the solution directly, I'm dumb and had
+-- missed it so far, only noticed it while doing the last problem #19.
+
 SELECT
     pd.product_name,
     SUM(
