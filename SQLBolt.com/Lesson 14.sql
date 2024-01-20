@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213341/https://sqlbolt.com/lesson/updating_rows
+
 UPDATE movies
 SET
     director = 'John Lasseter'

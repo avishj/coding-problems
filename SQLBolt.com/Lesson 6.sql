@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213150/https://sqlbolt.com/lesson/select_queries_with_joins
+
 SELECT
     title,
     domestic_sales,

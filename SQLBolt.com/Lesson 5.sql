@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213147/https://sqlbolt.com/lesson/select_queries_review
+
 SELECT
     city,
     population

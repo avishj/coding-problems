@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213125/https://sqlbolt.com/lesson/select_queries_introduction
+
 SELECT
     title
 FROM

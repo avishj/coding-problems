@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213153/https://sqlbolt.com/lesson/select_queries_with_expressions
+
 SELECT
     title,
     (domestic_sales + international_sales) / 1000000 AS combined_sales

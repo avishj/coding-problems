@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213207/https://sqlbolt.com/lesson/select_queries_with_aggregates_pt_2
+
 SELECT
     role,
     COUNT(role) AS role_count

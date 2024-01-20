@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213229/https://sqlbolt.com/lesson/select_queries_with_constraints_pt_2
+
 SELECT
     *
 FROM

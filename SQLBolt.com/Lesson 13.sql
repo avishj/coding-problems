@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213229/https://sqlbolt.com/lesson/inserting_rows
+
 INSERT INTO
     movies (title, director, year, length_minutes)
 VALUES

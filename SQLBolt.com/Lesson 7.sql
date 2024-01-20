@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213221/https://sqlbolt.com/lesson/select_queries_with_outer_joins
+
 SELECT DISTINCT
     building
 FROM

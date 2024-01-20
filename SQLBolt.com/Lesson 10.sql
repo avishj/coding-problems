@@ -1,3 +1,5 @@
+-- Source: https://web.archive.org/web/20240120213227/https://sqlbolt.com/lesson/select_queries_with_aggregates
+
 SELECT
     MAX(years_employed) AS max_years_employed
 FROM
